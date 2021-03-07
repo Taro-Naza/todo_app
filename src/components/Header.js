@@ -3,7 +3,7 @@ import './Header.css';
 
 function Header() {
 	return (
-		<div className='header'>
+		<header className='header'>
 			<img
 				src='https://www.tech4goodawards.com/wp-content/uploads/2018/03/Do-IT-Logo-600px.png'
 				className='header__logo'
@@ -18,7 +18,7 @@ function Header() {
 					Finished Tasks: <span>0</span>
 				</div>
 			</div>
-		</div>
+		</header>
 	);
 }
 

@@ -1,14 +1,13 @@
 import React from 'react';
+import Body from '../components/Body';
 import Header from '../components/Header';
 import './Main.css';
 
 function Main() {
 	return (
 		<div>
-			{/* Header component */}
 			<Header />
-
-			{/* Body component */}
+			<Body />
 		</div>
 	);
 }
