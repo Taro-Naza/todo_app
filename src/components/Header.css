@@ -1,0 +1,35 @@
+.header {
+	height: 8vh;
+	padding: 0 3%;
+	background-color: #ffe4c9;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__logo {
+	height: 90%;
+}
+
+.header__counters {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.header__counters span {
+	margin: 0 8px;
+	border: orangered 2px solid;
+	height: 50%;
+}
+
+.header__counter {
+	font-size: 17px;
+}
+
+.header__counter span {
+	background-color: orangered;
+	padding: 2px 7px;
+	border-radius: 50%;
+	color: #fff;
+}
