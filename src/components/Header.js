@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { TasksContext } from '../data/TasksContext';
+import { completeTasksNum } from '../utils/calculatePercentage';
 import './Header.css';
 
 function Header() {
+	const [tasks] = useContext(TasksContext);
+
 	return (
 		<header className='header'>
 			<img
@@ -11,11 +15,11 @@ function Header() {
 			/>
 			<div className='header__counters'>
 				<div className='header__counter'>
-					In-progress Tasks: <span>0</span>
+					Total Tasks: <span>{tasks.length}</span>
 				</div>
 				<span></span>
 				<div className='header__counter'>
-					Finished Tasks: <span>0</span>
+					Finished Tasks: <span>{completeTasksNum(tasks)}</span>
 				</div>
 			</div>
 		</header>

@@ -1,0 +1,42 @@
+.task {
+	background-color: #ffe4c9;
+	padding: 1rem 2rem;
+	border: 1px solid orangered;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	max-width: 700px;
+	margin: 2rem auto;
+	position: relative;
+}
+
+.task__name {
+	min-width: 300px;
+}
+
+.task__status {
+	color: orangered;
+	font-weight: 500;
+}
+
+.task__button {
+	padding: 0;
+	border: 0;
+	transition: transform 200ms ease-in;
+}
+
+.task__button:hover {
+	transform: scale(1.2);
+}
+
+.task__button:focus {
+	outline: none;
+}
+
+.task__icon-complete {
+	background-color: green;
+}
+
+.task__icon-remove {
+	background-color: orangered;
+}
